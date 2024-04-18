@@ -1,0 +1,41 @@
+header {
+    text-align: center;
+    z-index: 100;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+.header h1 {
+    margin: 0; 
+    font-size: 24px; 
+    text-align: center; 
+}
+/* Alinea el encabezado y el navbar en la misma línea */
+.header-navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    padding-top: 10px; 
+    margin-bottom: 10px; 
+}
+@media screen and (orientation: landscape) {
+    .carousel img {
+      height: 100vh;
+    }
+}
+.history {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px; 
+    margin-top: 50px;
+}
+.historia {
+    max-width: 700px; 
+}
+
+.historia h2 {
+    color: #333; 
+    text-align: center;
+}
