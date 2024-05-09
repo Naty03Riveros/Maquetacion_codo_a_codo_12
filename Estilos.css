@@ -1,3 +1,5 @@
+
+
 header {
     text-align: center;
     z-index: 100;
@@ -10,11 +12,21 @@ header {
     font-size: 24px; 
     text-align: center; 
 }
+.logo {
+    width: 200px; 
+    height: auto; 
+    margin-left: 10px;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+}
+
 /* Alinea el encabezado y el navbar en la misma línea */
 .header-navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0; /* Eliminar margen inferior */
+    margin-top:0;
 }
 .navbar {
     padding-top: 10px; 
@@ -28,14 +40,41 @@ header {
 .history {
     display: flex;
     justify-content: center; 
-    margin-bottom: 20px; 
+    margin-bottom: 100px; 
     margin-top: 50px;
 }
 .historia {
     max-width: 700px; 
+    font-family: 'Playfair Display', serif;
 }
 
 .historia h2 {
     color: #333; 
     text-align: center;
+}
+.events {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre eventos */
+}
+
+.event {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.event-img img,
+.event-text {
+    flex: 1;
+}
+
+.event-img img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; /* Espacio entre imagen y texto */
+}
+
+.event-text h3 {
+    margin-top: 0; /* Elimina el espacio superior del título */
 }
