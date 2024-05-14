@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link a CSS -->
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Tienda - Bodegas Lombardi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand d-md-none" href="#">
+                <img src="https://codingyaar.com/wp-content/uploads/logo-1.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Tienda.html">Tienda</a>
+                    </li>
+                    <a class="navbar-brand d-none d-md-block" href="#">
+                        <img src="https://codingyaar.com/wp-content/uploads/logo-1.png" alt="Logo">
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Productos -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Nuestra Tienda</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4" id="product-1">
+                <div class="card">
+                    <img src="src/red.png" class="card-img-top" alt="Vino 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Vino Tinto Reserva</h5>
+                        <p class="card-text">$20.00</p>
+                        <button class="btn btn-secondary" onclick="addToCart(1)">Añadir al Carrito</button>
+                        <button class="btn btn-dark" onclick="buyNow(1)">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" id="product-2">
+                <div class="card">
+                    <img src="src/Chador_lombardi.png" class="card-img-top" alt="Vino 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Vino Blanco Chardonnay</h5>
+                        <p class="card-text">$18.00</p>
+                        <button class="btn btn-secondary" onclick="addToCart(2)">Añadir al Carrito</button>
+                        <button class="btn btn-dark" onclick="buyNow(2)">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" id="product-3">
+                <div class="card">
+                    <img src="src/rose.png" class="card-img-top" alt="Vino 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Vino Rosado</h5>
+                        <p class="card-text">$15.00</p>
+                        <button class="btn btn-secondary" onclick="addToCart(3)">Añadir al Carrito</button>
+                        <button class="btn btn-dark" onclick="buyNow(3)">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" id="product-4">
+                <div class="card">
+                    <img src="src/espumoso.png" class="card-img-top" alt="Vino 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Vino Espumoso</h5>
+                        <p class="card-text">$22.00</p>
+                        <button class="btn btn-secondary" onclick="addToCart(4)">Añadir al Carrito</button>
+                        <button class="btn btn-dark" onclick="buyNow(4)">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" id="product-5">
+                <div class="card">
+                    <img src="src/gran reserva.png" class="card-img-top" alt="Vino 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Vino Tinto Gran Reserva</h5>
+                        <p class="card-text">$30.00</p>
+                        <button class="btn btn-secondary" onclick="addToCart(5)">Añadir al Carrito</button>
+                        <button class="btn btn-dark" onclick="buyNow(5)">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" id="product-6">
+                <div class="card">
+                    <img src="src/dulce.png" class="card-img-top" alt="Vino 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Vino Dulce</h5>
+                        <p class="card-text">$25.00</p>
+                        <button class="btn btn-secondary" onclick="addToCart(6)">Añadir al Carrito</button>
+                        <button class="btn btn-dark" onclick="buyNow(6)">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mensajes de éxito y error -->
+    <div class="container">
+        <div class="alert alert-success" id="success-message" style="display: none;">
+            Acción realizada con éxito.
+        </div>
+        <div class="alert alert-danger" id="error-message" style="display: none;">
+            Hubo un error al realizar la acción.
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-4">Sobre Nosotros</h5>
+                    <p>Somos Bodegas Lombardi, una empresa dedicada a ofrecer vinos de alta calidad desde 1912.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-4">Contacto</h5>
+                    <p>Dirección: Calle Principal, Mendoza</p>
+                    <p>Teléfono: +123456789</p>
+                    <p>Email: info@bodegaslombardi.com</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-4">Síguenos en las Redes Sociales</h5>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3" style="background-image: url('src/back_src_footer.webp'); background-size: cover;">
+            <p class="mb-0">© 2024 Bodegas Lombardi. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function showMessage(message, type) {
+            const successMessage = document.getElementById('success-message');
+            const errorMessage = document.getElementById('error-message');
+            if (type === 'success') {
+                successMessage.textContent = message;
+                successMessage.style.display = 'block';
+                errorMessage.style.display = 'none';
+            } else {
+                errorMessage.textContent = message;
+                errorMessage.style.display = 'block';
+                successMessage.style.display = 'none';
+            }
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+                errorMessage.style.display = 'none';
+            }, 3000);
+        }
+
+        function addToCart(productId) {
+            // Aquí iría la lógica para añadir al carrito
+            showMessage('Producto añadido al carrito.', 'success');
+        }
+
+        function buyNow(productId) {
+            // Aquí iría la lógica para comprar el producto
+            showMessage('Compra realizada con éxito.', 'success');
+        }
+    </script>
+
+    <!-- Bootstrap Bundle JS (Bootstrap JS y Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

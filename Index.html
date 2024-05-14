@@ -14,7 +14,7 @@
     <!--Iconos--> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
-
+<!--body-->
 <body>
     <script src="./main.js"></script>
     <script
@@ -22,68 +22,40 @@
     </script>
     <!-- Bootstrap Bundle JS (Bootstrap JS y Popper.js) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- Header y Navbar -->
-    <header class="header">
-      <div id = "logo">
-        <a href="./Index.html">
-          <img src="src/logo.webp" alt="Logo lomardi">
+    
+    
+    <!-- Header y Navbar+ agregar bajo header -->
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand d-md-none" href="#">
+          <img src="https://codingyaar.com/wp-content/uploads/logo-1.png" alt="Logo">
         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Tienda.html">Tienda</a>
+            </li>
+            <a class="navbar-brand d-none d-md-block" href="#">
+              <img src="https://codingyaar.com/wp-content/uploads/logo-1.png" alt="">
+            </a>
+            <li class="nav-item">
+              <a class="nav-link" href="Eventos.html">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contactos</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class = "main_menu"></div>
-      <nav id="principal">
-        <ul>
-          <li id="enlace"><a href="">Historia</a></li>
-          <li id="enlace"><a href="">Nuestros vinos</a></li>
-          <li id="enlace"><a href="">Contactanos</a></li>
-        </ul>
-      </nav>
-                <!-- Navbar con Bootstrap/JavaScript -->
-                <!--<nav class="navbar navbar-light">
-                    <a class="navbar-brand" href="#">Menu</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#history" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Historia</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Nuestros vinos</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Contactenos</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                        <li><a class="dropdown-item" href="Vinos.html">Vinos</a></li>
-                                        <li><a class="dropdown-item" href="Another action.html">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="Something else here.html">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </div>
-                </nav>-->
-    </header>
+    </nav>
+    
     <!-- Carrusel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -93,13 +65,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="src/Portada.webp" class="d-block w-100" alt="...">
+            <img src="src/Portada.webp" class="d-block w-100" alt="Portada">
           </div>
           <div class="carousel-item">
-            <img src="src/Arte-y-Vino.webp" class="d-block w-100" alt="...">
+            <img src="src/Arte-y-Vino.webp" class="d-block w-100" alt="Arte y vino">
           </div>
           <div class="carousel-item">
-            <img src="src/Winner.webp" class="d-block w-100" alt="...">
+            <img src="src/Winner.webp" class="d-block w-100" alt="Pinor ganador">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -111,29 +83,59 @@
           <span class="visually-hidden">Next</span>
         </button>
     </div>
+
      <!-- Sección sobre la familia y el viñedo -->
+    
     <div class="history">
         <div class="historia" id="history">
             <h2>Historia del Viñedo</h2>
-            <p>En las colinas de la Toscana, Italia, los Lombardi cultivaban uvas con pasión y legado ancestral. Pero cuando la economía flaqueaba, tomaron un corajudo rumbo hacia nuevas tierras, cargando solo sueños y esperanzas.</p>
-            <p> Ante la adversidad económica, migraron a Mendoza, donde sus sueños e inspiración florecieron..</p>
-            <p>Hoy, el viñedo Lombardi no solo es un negocio, es un emblema de resiliencia familiar. Cada botella narra su odisea, prometiendo un futuro lleno de brillo en su hogar mendocino.</p>
-            <img src="src/Historia.webp" class="img-fluid rounded mx-auto d-block" alt="Historia del viñedo">
+            <p>Cuando empezamos a desarrollar la idea para este viñedo, queríamos que fuera un paraíso... un lugar para celebrar el amor por la vida..</p>
+            <p>Don Franchesco Lombardi-1912</p>
+            <img src="src/Familia_lombardi.webp" class="img-fluid rounded mx-auto d-block" alt="Historia del viñedo">
         </div>
     </div>
+    
     <!--Vinos--->
     <div class="wine-types">
       <div class="container">
-          <h2>Nuestros vinos</h2>
-          <p>En el corazón de la región vinícola, nuestro viñedo se erige como un bastión de tradición y excelencia enológica. Con décadas de experiencia cultivando las más selectas variedades de uva, cada botella de vino que producimos es el resultado de un compromiso inquebrantable con la calidad y la pasión por el arte de la vinificación.</p>
-          <p>Desde los suelos fértiles hasta el cuidadoso proceso de elaboración, cada etapa de nuestro trabajo refleja nuestro profundo respeto por la tierra y el legado vitivinícola. Nuestros vinos encarnan la esencia de la región, capturando la riqueza de los terroirs locales en cada sorbo.</p>
-          <p>Ya sea un suave y afrutado Chardonnay, un robusto y especiado Cabernet Sauvignon o un delicado y refrescante Rosé, cada una de nuestras creaciones está imbuida de carácter y singularidad. Cada botella cuenta una historia, una historia de dedicación, artesanía y el espíritu único de nuestra tierra.</p>
-          <p>Descubre la elegancia en cada copa, y únete a nosotros en un viaje de exploración sensorial a través de nuestros viñedos y bodegas. Bienvenido a nuestro mundo de vinos excepcionales, donde la tradición se fusiona con la innovación para deleitar a los paladares más exigentes.</p>
-          <div class="wine-type">
-               <img src="src/tipos-vinos.webp" class="tip_vinos" alt="tipos de vinos" width="700">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Nuestros vinos</h2>
+            <p>En el corazón de la región vinícola, nuestro viñedo se erige como un bastión de tradición y excelencia enológica. Con décadas de experiencia cultivando las más selectas variedades de uva, cada botella de vino que producimos es el resultado de un compromiso inquebrantable con la calidad y la pasión por el arte de la vinificación.</p>
+            <p>Desde los suelos fértiles hasta el cuidadoso proceso de elaboración, cada etapa de nuestro trabajo refleja nuestro profundo respeto por la tierra y el legado vitivinícola. Nuestros vinos encarnan la esencia de la región, capturando la riqueza de los terroirs locales en cada sorbo.</p>
+            <p>Ya sea un suave y afrutado Chardonnay, un robusto y especiado Cabernet Sauvignon o un delicado y refrescante Rosé, cada una de nuestras creaciones está imbuida de carácter y singularidad. Cada botella cuenta una historia, una historia de dedicación, artesanía y el espíritu único de nuestra tierra.</p>
+            <p>Descubre la elegancia en cada copa, y únete a nosotros en un viaje de exploración sensorial a través de nuestros viñedos y bodegas. Bienvenido a nuestro mundo de vinos excepcionales, donde la tradición se fusiona con la innovación para deleitar a los paladares más exigentes.</p>
           </div>
+          <div class="col-md-6">
+            <div class="wine-type">
+              <img src="src/Vinos_lombardi.webp" class="tip_vinos img-fluid" alt="tipos de vinos">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- Adornos -->
+   
+    <div class="container my-5">
+      <img src="src/adorno_lombardi.webp" class="img-fluid w-75 mx-auto d-block" alt="Adorno">
+  </div>
+
+    <!--Eventos-->
+    <div class="wine-types-reversed">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="wine-type">
+                      <img src="src/Event_lombardi_1.webp" class="img-fluid" alt="Imagen Reversa">
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <h2>Eventos</h2>
+                  <p>Disfruta de las mejores cosas de la vida: vino, comida, música, baile, juegos, nadar y todo tipo de espectáculos.</p>
+              </div>
+          </div>
+      </div>
+  </div>
     <div></div>
     <!--Contacto-->
     <h2>Contactenos</h2>
@@ -167,53 +169,30 @@
       <div id="map" style="height: 400px;">
       </div>
     </section>
-    <!---Footer-->
-    <footer class="text-center text-white" style="background-color: #f1f1f1;">
-      <section id="logo-footer">
-        <img src="src/logo.webp" alt="Bodegas Lombardi">
-      </section>
-      <section id="contact-footer"></section>
-      </section id="redes-footer">
-        <!-- Grid container -->
-        <div class="container pt-4">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a
-              data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://www.facebook.com" target="_blank"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-facebook-f"></i>
-            </a>
-      
-            <!-- Twitter -->
-            <a
-              data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://www.twitter.com" target="_blank"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-twitter"></i>
-            </a>
-      
-            <!-- Instagram -->
-            <a
-              data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://www.instagram.com" target="_blank"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-instagram"></i>
-            </a>
-           
-          </section>
-          <!-- Section: Social media -->
+    <!--Footer-->
+    <footer class="bg-dark text-white">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <h5 class="mb-4">Sobre Nosotros</h5>
+            <p>Somos Bodegas Lombardi, una empresa dedicada a ofrecer vinos de alta calidad desde 1912.</p>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <h5 class="mb-4">Contacto</h5>
+            <p>Dirección: Calle Principal, Mendoza</p>
+            <p>Teléfono: +123456789</p>
+            <p>Email: info@bodegaslombardi.com</p>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <h5 class="mb-4">Síguenos en las Redes Sociales</h5>
+            <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
-        <!-- Copyright -->
-        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2024 Copyright:
-          <a class="text-dark" href="https://mdbootstrap.com/">Lombardi</a>
-        </div>
-        <!-- Copyright -->
+      </div>
+      <div class="text-center py-3" style="background-image: url('src/back_src_footer.webp'); background-size: cover;">
+        <p class="mb-0">© 2024 Bodegas Lombardi. Todos los derechos reservados.</p>
+      </div>
     </footer>
-</body>
-</html>
+  </body>
