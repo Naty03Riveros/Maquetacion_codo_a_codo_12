@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link a CSS -->
     <link rel="stylesheet" href="Estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>Tienda - Bodegas Lombardi</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Iconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
+    <!---Navbar-->
     <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
         <div class="container-fluid">
             <a class="navbar-brand d-md-none" href="#">
@@ -42,7 +39,7 @@
                         <a class="nav-link" href="#contact">Contactos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="cart-icon" onclick="showCart()">
+                        <a class="nav-link" href="#" id="cart-icon">
                             <i class="fas fa-shopping-cart"></i>
                             <span class="badge bg-danger" id="cart-count">0</span>
                         </a>
@@ -51,105 +48,89 @@
             </div>
         </div>
     </nav>
+     <!---Grilla de productos-->
 
-    <!-- Productos -->
     <div class="container my-5">
         <h2 class="text-center mb-4">Nuestra Tienda</h2>
         <div class="row">
-            <div class="col-md-4 mb-4" id="product-1">
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <img src="src/red.webp" class="card-img-top" alt="Vino 1">
                     <div class="card-body">
                         <h5 class="card-title">Vino Tinto Reserva</h5>
                         <p class="card-text">$20.00</p>
-                        <button class="btn btn-secondary" onclick="addToCart(1)">Añadir al Carrito</button>
-                        <button class="btn btn-dark" onclick="buyNow(1)">Comprar Ahora</button>
+                        <button class="btn btn-secondary add-to-cart">Añadir al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" id="product-2">
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <img src="src/Chador_lombardi.webp" class="card-img-top" alt="Vino 2">
                     <div class="card-body">
                         <h5 class="card-title">Vino Blanco Chardonnay</h5>
                         <p class="card-text">$18.00</p>
-                        <button class="btn btn-secondary" onclick="addToCart(2)">Añadir al Carrito</button>
-                        <button class="btn btn-dark" onclick="buyNow(2)">Comprar Ahora</button>
+                        <button class="btn btn-secondary add-to-cart">Añadir al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" id="product-3">
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <img src="src/rose.png" class="card-img-top" alt="Vino 3">
                     <div class="card-body">
                         <h5 class="card-title">Vino Rosado</h5>
                         <p class="card-text">$15.00</p>
-                        <button class="btn btn-secondary" onclick="addToCart(3)">Añadir al Carrito</button>
-                        <button class="btn btn-dark" onclick="buyNow(3)">Comprar Ahora</button>
+                        <button class="btn btn-secondary add-to-cart">Añadir al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" id="product-4">
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <img src="src/espumoso.png" class="card-img-top" alt="Vino 4">
                     <div class="card-body">
                         <h5 class="card-title">Vino Espumoso</h5>
                         <p class="card-text">$22.00</p>
-                        <button class="btn btn-secondary" onclick="addToCart(4)">Añadir al Carrito</button>
-                        <button class="btn btn-dark" onclick="buyNow(4)">Comprar Ahora</button>
+                        <button class="btn btn-secondary add-to-cart">Añadir al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" id="product-5">
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <img src="src/gran reserva.png" class="card-img-top" alt="Vino 5">
                     <div class="card-body">
                         <h5 class="card-title">Vino Tinto Gran Reserva</h5>
                         <p class="card-text">$30.00</p>
-                        <button class="btn btn-secondary" onclick="addToCart(5)">Añadir al Carrito</button>
-                        <button class="btn btn-dark" onclick="buyNow(5)">Comprar Ahora</button>
+                        <button class="btn btn-secondary add-to-cart">Añadir al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" id="product-6">
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <img src="src/dulce.png" class="card-img-top" alt="Vino 6">
                     <div class="card-body">
                         <h5 class="card-title">Vino Dulce</h5>
                         <p class="card-text">$25.00</p>
-                        <button class="btn btn-secondary" onclick="addToCart(6)">Añadir al Carrito</button>
-                        <button class="btn btn-dark" onclick="buyNow(6)">Comprar Ahora</button>
+                        <button class="btn btn-secondary add-to-cart">Añadir al Carrito</button>
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
-     <!---Carrito-->
-     <div id="cart" class="position-fixed top-0 end-0 p-3" style="z-index: 1050; display: none;">
+
+    <div id="cart" class="position-fixed top-0 end-0 p-3" style="z-index: 1050; display: none;">
         <div class="card">
             <div class="card-header">
                 Carrito de Compras
             </div>
             <div class="card-body" id="cart-items">
-                <!-- Aquí se mostrarán los productos agregados al carrito -->
+                
             </div>
             <div class="card-footer">
-                <button class="btn btn-primary">Pagar</button>
+                <button class="btn btn-secondary" onclick="viewCart()">Ver Carrito</button>
+                <button class="btn btn-primary" onclick="checkout()">Finalizar Compra</button>
             </div>
         </div>
     </div>
-    <!-- Mensajes de éxito y error -->
-    <div class="container">
-        <div class="alert alert-success" id="success-message" style="display: none;">
-            Acción realizada con éxito.
-        </div>
-        <div class="alert alert-danger" id="error-message" style="display: none;">
-            Hubo un error al realizar la acción.
-        </div>
-    </div>
-
-    <!-- Footer -->
+     <!---Footer-->
     <footer class="bg-dark text-white">
         <div class="container py-5">
             <div class="row">
@@ -175,11 +156,10 @@
             <p class="mb-0">© 2024 Bodegas Lombardi. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="compras.js"></script>
-    
-    <!-- Bootstrap Bundle JS (Bootstrap JS y Popper.js) -->
+     <!---scripts---->
+    <script src="tienda.js"></script>
+    <script src="checkout.js"></script>
+    <script src="cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
