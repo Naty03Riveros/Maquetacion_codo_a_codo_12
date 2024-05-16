@@ -90,7 +90,36 @@
     margin-right: 20px;
 }
 
-/* Estilos personalizados para la sección de eventos */
+
+.history {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  border-top: 1px solid #e9ecef;
+  margin: 0;
+}
+
+.historia {
+  text-align: center;
+  margin-top: 20px; /* Margen superior para separar la sección del contenido superior */
+}
+
+.historia h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px; /* Espacio inferior para separar el título del contenido siguiente */
+}
+
+.historia p {
+  font-size: 1.5rem;
+  margin-bottom: 10px; /* Espacio inferior para separar los párrafos */
+  font-family: 'Playfair Display', serif;
+  text-align: justify;
+}
+
+.historia img {
+  max-width: 100%;
+  margin-top: 20px; /* Margen superior para separar la imagen del texto */
+}
+
 .events-section {
     background-color: #f8f9fa;
     padding: 60px 0;

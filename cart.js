@@ -36,6 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'checkout.html';
     };
 
+    const viewCart = () => {
+        displayCartItems();
+    };
+
+    const cartButton = document.getElementById('cart-icon');
+    cartButton.addEventListener('click', viewCart);
+
     displayCartItems();
     updateCartCount();
 });
