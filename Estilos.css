@@ -32,9 +32,8 @@
     justify-content: center; 
     margin-bottom: 100px; 
     margin-top: 50px;
-    background-color: #f8f9fa;
-    padding: 60px 0;
-    border-top: 1px solid #e9ecef;
+  
+    
 }
 
 .historia {
@@ -102,8 +101,9 @@
     font-size: 2.5rem;
     font-weight: normal;
     margin-bottom: 20px;
-    color:#333
+    color:#333;
     font-family: 'Playfair Display', serif;
+    
 }
 
 .events-section p {
@@ -113,6 +113,7 @@
     text-align: justify;
     font-size: 1.5rem;
 }
+
 
 #redes_footer {
     display: flex;

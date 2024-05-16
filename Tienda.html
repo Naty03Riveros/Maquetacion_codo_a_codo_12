@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
         <div class="container-fluid">
             <a class="navbar-brand d-md-none" href="#">
-                <img src="https://codingyaar.com/wp-content/uploads/logo-1.png" alt="Logo">
+                <img src="src/WhatsApp Image 2024-05-15 at 10.54.36.webp" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,13 +33,19 @@
                         <a class="nav-link active" href="Tienda.html">Tienda</a>
                     </li>
                     <a class="navbar-brand d-none d-md-block" href="#">
-                        <img src="https://codingyaar.com/wp-content/uploads/logo-1.png" alt="Logo">
+                        <img src="src/WhatsApp Image 2024-05-15 at 10.54.36.webp" alt="Logo">
                     </a>
                     <li class="nav-item">
                         <a class="nav-link" href="Eventos.html">Eventos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="cart-icon" onclick="showCart()">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge bg-danger" id="cart-count">0</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -52,7 +58,7 @@
         <div class="row">
             <div class="col-md-4 mb-4" id="product-1">
                 <div class="card">
-                    <img src="src/red.png" class="card-img-top" alt="Vino 1">
+                    <img src="src/red.webp" class="card-img-top" alt="Vino 1">
                     <div class="card-body">
                         <h5 class="card-title">Vino Tinto Reserva</h5>
                         <p class="card-text">$20.00</p>
@@ -63,7 +69,7 @@
             </div>
             <div class="col-md-4 mb-4" id="product-2">
                 <div class="card">
-                    <img src="src/Chador_lombardi.png" class="card-img-top" alt="Vino 2">
+                    <img src="src/Chador_lombardi.webp" class="card-img-top" alt="Vino 2">
                     <div class="card-body">
                         <h5 class="card-title">Vino Blanco Chardonnay</h5>
                         <p class="card-text">$18.00</p>
@@ -116,9 +122,23 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
-
+     <!---Carrito-->
+     <div id="cart" class="position-fixed top-0 end-0 p-3" style="z-index: 1050; display: none;">
+        <div class="card">
+            <div class="card-header">
+                Carrito de Compras
+            </div>
+            <div class="card-body" id="cart-items">
+                <!-- Aquí se mostrarán los productos agregados al carrito -->
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary">Pagar</button>
+            </div>
+        </div>
+    </div>
     <!-- Mensajes de éxito y error -->
     <div class="container">
         <div class="alert alert-success" id="success-message" style="display: none;">
@@ -157,37 +177,10 @@
     </footer>
 
     <!-- Scripts -->
-    <script>
-        function showMessage(message, type) {
-            const successMessage = document.getElementById('success-message');
-            const errorMessage = document.getElementById('error-message');
-            if (type === 'success') {
-                successMessage.textContent = message;
-                successMessage.style.display = 'block';
-                errorMessage.style.display = 'none';
-            } else {
-                errorMessage.textContent = message;
-                errorMessage.style.display = 'block';
-                successMessage.style.display = 'none';
-            }
-            setTimeout(() => {
-                successMessage.style.display = 'none';
-                errorMessage.style.display = 'none';
-            }, 3000);
-        }
-
-        function addToCart(productId) {
-            // Aquí iría la lógica para añadir al carrito
-            showMessage('Producto añadido al carrito.', 'success');
-        }
-
-        function buyNow(productId) {
-            // Aquí iría la lógica para comprar el producto
-            showMessage('Compra realizada con éxito.', 'success');
-        }
-    </script>
-
+    <script src="compras.js"></script>
+    
     <!-- Bootstrap Bundle JS (Bootstrap JS y Popper.js) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
 </html>
