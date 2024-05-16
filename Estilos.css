@@ -32,19 +32,26 @@
     justify-content: center; 
     margin-bottom: 100px; 
     margin-top: 50px;
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    border-top: 1px solid #e9ecef;
 }
 
 .historia {
     max-width: 700px; 
     font-family: 'Playfair Display', serif;
     text-align: justify;
+    font-size: 1.5rem;
 }
 
 .historia h2 {
     color: #333; 
     text-align: center;
+    font-size: 2.5rem;
 }
-
+.historia p{
+  color:#555;
+}
 .wine-types .container{
     display: flex;
     flex-direction: column;
@@ -52,18 +59,25 @@
     align-items: center;
     margin-bottom: 100px;
     margin-top: 50px;
+    
 }
 
 .wine-types h2 {
     color: #333; 
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 20px;
     font-family: 'Playfair Display', serif;
+    
 }
 
 .wine-types p {
     max-width: 700px; 
     font-family: 'Playfair Display', serif;
     text-align: justify;
+    font-size: 1.5rem;
+    color:#555
 }
 
 #contact {
@@ -85,15 +99,19 @@
 }
 
 .events-section h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: normal;
     margin-bottom: 20px;
+    color:#333
     font-family: 'Playfair Display', serif;
 }
 
 .events-section p {
-    font-size: 1.5rem;
+    
     color: #555;
+    font-family: 'Playfair Display', serif;
+    text-align: justify;
+    font-size: 1.5rem;
 }
 
 #redes_footer {
