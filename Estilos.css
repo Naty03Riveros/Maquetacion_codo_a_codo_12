@@ -51,6 +51,7 @@
 .historia p{
   color:#555;
 }
+
 .wine-types .container{
     display: flex;
     flex-direction: column;
@@ -113,6 +114,7 @@
   margin-bottom: 10px; /* Espacio inferior para separar los párrafos */
   font-family: 'Playfair Display', serif;
   text-align: justify;
+  letter-spacing: -0.5px;
 }
 
 .historia img {
@@ -129,6 +131,7 @@
 .events-section h2 {
     font-size: 2.5rem;
     font-weight: normal;
+    text-align: center;
     margin-bottom: 20px;
     color:#333;
     font-family: 'Playfair Display', serif;
