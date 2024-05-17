@@ -3,164 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <title>Tienda - Bodegas Lombardi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Tienda de Vinos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!---Navbar-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
-        <div class="container-fluid">
-            <a class="navbar-brand d-md-none" href="#">
-                <img src="src/WhatsApp Image 2024-05-15 at 10.54.36.webp" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="Tienda.html">Tienda</a>
-                    </li>
-                    <a class="navbar-brand d-none d-md-block" href="#">
-                        <img src="src/WhatsApp Image 2024-05-15 at 10.54.36.webp" alt="Logo">
-                    </a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Eventos.html">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contactos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="cart-icon">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="badge bg-danger" id="cart-count">0</span>
-                        </a>
-                    </li>
-                </ul>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Tienda</a>
+            <a href="#"><img src="logo.png" alt="Logo" class="logo"></a>
+            <a href="#">Eventos</a>
+            <input type="text" placeholder="Buscar productos..." id="searchBar">
+            <a href="#" id="cartIcon">🛒 Ver Carrito</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Nuestra tienda</h1>
+        <p>Aquí encontrarás nuestros mejores vinos</p>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="src/Event_tasting.webp" alt="Producto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="#" alt="Producto 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="ruta-de-tu-imagen3.jpg" alt="Producto 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="ruta-de-tu-imagen4.jpg" alt="Producto 4">
+                </div>
+            </div>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+
+        <div class="products">
+            <div class="product" data-name="Vino 1">
+                <img src="src/red.webp" alt="Vino 1">
+                <button class="add-to-cart">Agregar</button>
+                <div class="quantity-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            <div class="product" data-name="Vino 2">
+                <img src="src/Chador_lombardi.webp" alt="Vino 2">
+                <button class="add-to-cart">Agregar</button>
+                <div class="quantity-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            <div class="product" data-name="Vino 3">
+                <img src="src/rose.png" alt="Vino 3">
+                <button class="add-to-cart">Agregar</button>
+                <div class="quantity-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            <div class="product" data-name="Vino 4">
+                <img src="src/gran reserva.png" alt="Vino 4">
+                <button class="add-to-cart">Agregar</button>
+                <div class="quantity-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                </div>
             </div>
         </div>
-    </nav>
-     <!---Grilla de productos-->
+    </main>
 
-    <div class="container my-5">
-        <h2 class="text-center mb-4">Nuestra Tienda</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="src/red.webp" class="card-img-top" alt="Vino 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Vino Tinto Reserva</h5>
-                        <p class="card-text">$20.00</p>
-                        <button class="btn btn-secondary add-to-cart">Añadir al Carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="src/Chador_lombardi.webp" class="card-img-top" alt="Vino 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Vino Blanco Chardonnay</h5>
-                        <p class="card-text">$18.00</p>
-                        <button class="btn btn-secondary add-to-cart">Añadir al Carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="src/rose.png" class="card-img-top" alt="Vino 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Vino Rosado</h5>
-                        <p class="card-text">$15.00</p>
-                        <button class="btn btn-secondary add-to-cart">Añadir al Carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="src/espumoso.png" class="card-img-top" alt="Vino 4">
-                    <div class="card-body">
-                        <h5 class="card-title">Vino Espumoso</h5>
-                        <p class="card-text">$22.00</p>
-                        <button class="btn btn-secondary add-to-cart">Añadir al Carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="src/gran reserva.png" class="card-img-top" alt="Vino 5">
-                    <div class="card-body">
-                        <h5 class="card-title">Vino Tinto Gran Reserva</h5>
-                        <p class="card-text">$30.00</p>
-                        <button class="btn btn-secondary add-to-cart">Añadir al Carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="src/dulce.png" class="card-img-top" alt="Vino 6">
-                    <div class="card-body">
-                        <h5 class="card-title">Vino Dulce</h5>
-                        <p class="card-text">$25.00</p>
-                        <button class="btn btn-secondary add-to-cart">Añadir al Carrito</button>
-                    </div>
-                </div>
-            </div>
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems"></ul>
+            <button id="checkout">Finalizar Compra</button>
         </div>
     </div>
-
-    <div id="cart" class="position-fixed top-0 end-0 p-3" style="z-index: 1050; display: none;">
-        <div class="card">
-            <div class="card-header">
-                Carrito de Compras
-            </div>
-            <div class="card-body" id="cart-items">
-                
-            </div>
-            <div class="card-footer">
-                <button class="btn btn-secondary" onclick="viewCart()">Ver Carrito</button>
-                <button class="btn btn-primary" onclick="checkout()">Finalizar Compra</button>
-            </div>
-        </div>
-    </div>
-     <!---Footer-->
-    <footer class="bg-dark text-white">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <h5 class="mb-4">Sobre Nosotros</h5>
-                    <p>Somos Bodegas Lombardi, una empresa dedicada a ofrecer vinos de alta calidad desde 1912.</p>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <h5 class="mb-4">Contacto</h5>
-                    <p>Dirección: Calle Principal, Mendoza</p>
-                    <p>Teléfono: +123456789</p>
-                    <p>Email: info@bodegaslombardi.com</p>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <h5 class="mb-4">Síguenos en las Redes Sociales</h5>
-                    <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="text-center py-3" style="background-image: url('src/back_src_footer.webp'); background-size: cover;">
-            <p class="mb-0">© 2024 Bodegas Lombardi. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-     <!---scripts---->
-    <script src="tienda.js"></script>
-    <script src="checkout.js"></script>
-    <script src="cart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
