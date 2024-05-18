@@ -27,30 +27,37 @@
     }
 }
 
-.history {
-    display: flex;
-    justify-content: center; 
-    margin-bottom: 100px; 
-    margin-top: 50px;
-  
-    
+/* Sección historia */
+.history .container-fluid {
+  display: flex;
+  align-items: center;
 }
 
-.historia {
-    max-width: 700px; 
-    font-family: 'Playfair Display', serif;
-    text-align: justify;
-    font-size: 1.5rem;
+.history .historia {
+  max-width: 700px;
+  font-family: 'Playfair Display', serif;
+  text-align: justify;
+  font-size: 1.5rem;
 }
 
-.historia h2 {
-    color: #333; 
-    text-align: center;
-    font-size: 2.5rem;
+.history .historia h2 {
+  color: #333;
+  text-align: center;
+  font-size: 2.5rem;
 }
-.historia p{
-  color:#555;
+
+.history .historia p {
+  color: #555;
+  margin-bottom: 20px;
 }
+
+.history img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 /*Sección vinos*/
 
 .wine-types .container{
@@ -84,6 +91,7 @@
   width: 100%;
   height: auto;
 }
+
 #contact {
     display: flex;
     flex-direction: row;
@@ -96,34 +104,84 @@
 }
 
 
+/* Sección historia */
 .history {
   background-color: #f8f9fa;
   padding: 60px 0;
   border-top: 1px solid #e9ecef;
-  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.history .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .historia {
-  text-align: center;
-  margin-top: 20px; /* Margen superior para separar la sección del contenido superior */
+  max-width: 700px;
+  font-family: 'Playfair Display', serif;
+  text-align: center; /* Asegúrate de que el texto esté centrado */
+  font-size: 1.5rem;
 }
 
 .historia h2 {
+  color: #333;
   font-size: 2.5rem;
-  margin-bottom: 20px; /* Espacio inferior para separar el título del contenido siguiente */
 }
 
 .historia p {
-  font-size: 1.5rem;
-  margin-bottom: 10px; /* Espacio inferior para separar los párrafos */
-  font-family: 'Playfair Display', serif;
+  color: #555;
+  margin-bottom: 20px;
   text-align: justify;
-  letter-spacing: -0.5px;
 }
 
 .historia img {
-  max-width: 100%;
-  margin-top: 20px; /* Margen superior para separar la imagen del texto */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 20px 0; /* Añade margen para separar el texto de la imagen */
+}
+
+/*sección frase*/
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+.inspiration-section {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 6s ease-in-out;
+}
+
+.inspiration-text {
+  color: #333;
+  animation: fadeIn 6s ease-in-out;
+}
+
+.inspiration-section h2 {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.inspiration-section p {
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #555;
 }
 
 
@@ -149,8 +207,41 @@
   width: 100%;
   height: auto;
 }
+.cta-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
 
+.cta-button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
 
+#contact .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#form {
+  margin-bottom: 20px;
+}
+
+#map {
+  height: 100%;
+}
 #redes_footer {
     display: flex;
     align-items: center;

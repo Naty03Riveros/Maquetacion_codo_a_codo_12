@@ -81,36 +81,52 @@
     
      <!-- Sección sobre la familia y el viñedo -->
     
-    <div class="history">
-        <div class="historia" id="history">
+  
+     <div class="history">
+        <div class="container">
+          <div class="historia" id="history">
             <h2>Nuestra historia</h2>
             <p>Al concebir este viñedo, nuestra visión era crear un paraíso para celebrar el amor por la vida. Encontramos en Mendoza, Argentina, el escenario perfecto para este sueño.</p>
             <p>Don Franchesco Lombardi, 1912</p>
             <img src="src/Familia_lombardi.webp" class="img-fluid rounded mx-auto d-block" alt="Historia del viñedo">
-           
+          </div>
         </div>
-    </div>
+      </div>
+      
+
+
     
     <!-- Sección Vinos -->
     <div class="wine-types">
-      <div class="container-fluid p-0">
-          <div class="row g-0">
-              <div class="col-md-6 d-flex flex-column justify-content-center align-items-center p-5">
-                  <h2>Nuestros vinos</h2>
-                  <p>Explora nuestra exquisita selección de vinos, desde la famosa colección Diamond hasta la exclusiva Franchesco Lombardi Reserva. Cada botella refleja nuestra pasión por la calidad vinícola.</p>  
-              </div>
-              <div class="col-md-6">
-                  <img src="src/Lombardi_montañas.webp" class="tip_vinos img-fluid" alt="tipos de vinos">
-              </div>
-          </div>
-      </div>
-  </div>
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center p-5">
+                    <h2>Nuestros vinos</h2>
+                    <p>Explora nuestra exquisita selección de vinos, desde la famosa colección Diamond hasta la exclusiva Franchesco Lombardi Reserva. Cada botella refleja nuestra pasión por la calidad vinícola.</p>  
+                </div>
+                <div class="col-md-6 position-relative">
+                    <img src="src/Lombardi_montañas.webp" class="tip_vinos img-fluid" alt="tipos de vinos">
+                    <a href="Tienda.html" class="cta-button">COMPRAR</a>
+                </div>
+            </div>
+        </div>
+    </div>
   
-  <div class="events-section">
+  <!-- Sección Inspiradora -->
+  <div class="inspiration-section text-center d-flex align-items-center" style="background-image: url('src/logoig.webp'); background-size: cover; background-position: center; height: 400px;">
+    <div class="container">
+        <h2 class="display-4 inspiration-text">"El vino es la respuesta a todo. No recuerdo la pregunta."</h2>
+        <p class="lead inspiration-text">- Anónimo</p>
+    </div>
+</div>
+  <!---Sección eventos-->
+  <!-- Sección eventos -->
+<div class="events-section">
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-md-6">
+            <div class="col-md-6 position-relative">
                 <img src="src/Lombardi_eventos_mujer.webp" class="img-fluid" alt="Eventos privados">
+                <a href="Eventos.html" class="cta-button">RESERVAR</a>
             </div>
             <div class="col-md-6 d-flex align-items-center justify-content-center">
                 <div class="p-5 text-center">
@@ -121,6 +137,9 @@
         </div>
     </div>
 </div>
+
+
+
     <!-- Sección Contacto -->
     <section id="contact">
         <div id="form">
@@ -185,5 +204,7 @@
     <script src="./main.js"></script>
     <script src="formulario.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCayOpyi-2KF_Qj3lc18qcOqH3On2jwPz8&libraries=places&callback=initMap" defer></script>
+    <script src="app.js"></script>
+   
 </body>
 </html>
