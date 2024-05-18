@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModal = document.querySelector('.close');
     const cartItemsList = document.getElementById('cartItems');
     const checkoutBtn = document.getElementById('checkout');
+    const increaseButtons = document.querySelectorAll('.increase');
+    const decreaseButtons = document.querySelectorAll('.decrease');
     let currentIndex = 0;
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -28,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCarousel();
     });
 
-    addToCartButtons.forEach((button, index) => {
+    addToCartButtons.forEach((button) => {
         button.addEventListener('click', () => {
             const productElement = button.closest('.product');
             const productName = productElement.getAttribute('data-name');
@@ -45,7 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function updateCartIcon() {
-        cartIcon.textContent = `🛒 Ver Carrito (${cart.length})`;
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartIcon.textContent = `🛒 Ver Carrito (${totalItems})`;
     }
 
     cartIcon.addEventListener('click', () => {
@@ -58,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('click', (event) => {
-        if (event.target == cartModal) {
+        if (event.target === cartModal) {
             cartModal.style.display = 'none';
         }
     });
@@ -79,9 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCartIcon();
         cartModal.style.display = 'none';
     });
-
-    const increaseButtons = document.querySelectorAll('.increase');
-    const decreaseButtons = document.querySelectorAll('.decrease');
 
     increaseButtons.forEach((button) => {
         button.addEventListener('click', () => {
@@ -107,11 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const searchTerm = searchBar.value.toLowerCase();
         products.forEach(product => {
             const productName = product.getAttribute('data-name').toLowerCase();
-            if (productName.includes(searchTerm)) {
-                product.style.display = 'block';
-            } else {
-                product.style.display = 'none';
-            }
+            product.style.display = productName.includes(searchTerm) ? 'block' : 'none';
         });
     });
 

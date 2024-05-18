@@ -51,6 +51,7 @@
 .historia p{
   color:#555;
 }
+/*Sección vinos*/
 
 .wine-types .container{
     display: flex;
@@ -79,7 +80,10 @@
     font-size: 1.5rem;
     color:#555
 }
-
+.wine-types img {
+  width: 100%;
+  height: auto;
+}
 #contact {
     display: flex;
     flex-direction: row;
@@ -122,28 +126,28 @@
   margin-top: 20px; /* Margen superior para separar la imagen del texto */
 }
 
-.events-section {
-    background-color: #f8f9fa;
-    padding: 60px 0;
-    border-top: 1px solid #e9ecef;
-}
 
 .events-section h2 {
-    font-size: 2.5rem;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 20px;
-    color:#333;
-    font-family: 'Playfair Display', serif;
-    
+  color: #333;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
 }
 
 .events-section p {
-    
-    color: #555;
-    font-family: 'Playfair Display', serif;
-    text-align: justify;
-    font-size: 1.5rem;
+  max-width: 700px;
+  font-family: 'Playfair Display', serif;
+  text-align: justify;
+  font-size: 1.5rem;
+  color: #555;
+  padding: 0 20px;
+}
+
+.events-section img {
+  width: 100%;
+  height: auto;
 }
 
 
