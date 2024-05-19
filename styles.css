@@ -1,69 +1,116 @@
 body {
-  margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
-}
-
-.logo {
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .logo {
     width: 50px;
     height: auto;
-}
-
-.header,
-.main {
+  }
+  
+  .header {
     text-align: center;
-}
-
-.carousel-container {
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    width: 80px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .navbar-brand img {
+      width: 100px;
+    }
+  
+    .navbar-brand {
+      margin-right: 0;
+      padding: 0 1em;
+    }
+  }
+  
+  .carousel-container {
     max-width: 800px;
     margin: 0 auto;
-}
-
-.product {
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  @media screen and (orientation: landscape) {
+    .carousel img {
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+  
+  .product {
     border: 1px solid #ddd;
     padding: 15px;
     margin-bottom: 15px;
     text-align: center;
-}
-
-.product img {
+  }
+  
+  .product img {
     max-width: 100%;
     height: auto;
-}
-
-.quantity-controls {
+  }
+  
+  .quantity-controls {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.quantity-controls button {
+  }
+  
+  .quantity-controls button {
     width: 30px;
     height: 30px;
     line-height: 1;
     text-align: center;
     padding: 0;
-}
-
-.quantity {
+  }
+  
+  .quantity {
     width: 30px;
     text-align: center;
-}
-
-#cartIcon {
+  }
+  
+  #cartIcon {
     display: flex;
     align-items: center;
-}
-
-#cartIcon i {
+  }
+  
+  #cartIcon i {
     margin-right: 5px;
-}
-
-#cartModal .modal-content {
+  }
+  
+  #cartModal .modal-content {
     text-align: left;
-}
-#redes_footer {
+  }
+  
+  #redes_footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-}
+  }
+  

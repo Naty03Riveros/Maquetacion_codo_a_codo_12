@@ -229,6 +229,23 @@
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
 }
+.club-heading {
+  color: #333;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.club-paragraph,h2 {
+  max-width: 700px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #555;
+  padding: 0 20px;
+}
 
 #contact .container {
   padding-top: 50px;
