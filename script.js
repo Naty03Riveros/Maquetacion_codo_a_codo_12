@@ -1,34 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const prevBtn = document.querySelector('.prev');
-    const nextBtn = document.querySelector('.next');
-    const carousel = document.querySelector('.carousel');
-    const carouselItems = document.querySelectorAll('.carousel-item');
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
     const cartIcon = document.getElementById('cartIcon');
     const searchBar = document.getElementById('searchBar');
     const products = document.querySelectorAll('.product');
     const cartModal = document.getElementById('cartModal');
-    const closeModal = document.querySelector('.close');
+    const closeModal = document.querySelector('.btn-close');
     const cartItemsList = document.getElementById('cartItems');
     const checkoutBtn = document.getElementById('checkout');
     const increaseButtons = document.querySelectorAll('.increase');
     const decreaseButtons = document.querySelectorAll('.decrease');
-    let currentIndex = 0;
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-    function updateCarousel() {
-        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-
-    prevBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : carouselItems.length - 1;
-        updateCarousel();
-    });
-
-    nextBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex < carouselItems.length - 1) ? currentIndex + 1 : 0;
-        updateCarousel();
-    });
 
     addToCartButtons.forEach((button) => {
         button.addEventListener('click', () => {
@@ -53,15 +34,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     cartIcon.addEventListener('click', () => {
         displayCart();
+        cartModal.classList.add('show');
         cartModal.style.display = 'block';
     });
 
     closeModal.addEventListener('click', () => {
+        cartModal.classList.remove('show');
         cartModal.style.display = 'none';
     });
 
     window.addEventListener('click', (event) => {
         if (event.target === cartModal) {
+            cartModal.classList.remove('show');
             cartModal.style.display = 'none';
         }
     });
@@ -80,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cart = [];
         localStorage.setItem('cart', JSON.stringify(cart));
         updateCartIcon();
+        cartModal.classList.remove('show');
         cartModal.style.display = 'none';
     });
 

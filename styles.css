@@ -1,191 +1,69 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
-
-nav .logo {
-    height: 40px;
-}
-
-nav #searchBar {
-    padding: 5px;
-    font-size: 16px;
-}
-
-nav #cartIcon {
-    position: relative;
-}
-
-main {
-    padding: 20px;
-}
-
-.wine-types {
-    margin: 0;
-}
-
-.wine-types .container-fluid {
-    padding: 0;
-}
-
-.wine-types .row {
-    margin: 0;
-}
-
-.wine-types h2 {
-    color: #333;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: normal;
-    margin-bottom: 20px;
-    font-family: 'Playfair Display', serif;
-}
-
-.wine-types p {
-    max-width: 700px;
-    font-family: 'Playfair Display', serif;
-    text-align: justify;
-    font-size: 1.5rem;
-    color: #555;
-    padding: 0 20px;
-}
-
-.wine-types img {
-    width: 100%;
+.logo {
+    width: 50px;
     height: auto;
 }
 
-.inspiration-section {
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+.header,
+.main {
     text-align: center;
 }
 
-.inspiration-section h2 {
-    font-size: 3rem;
-    font-family: 'Playfair Display', serif;
-}
-
-.inspiration-section p {
-    font-size: 1.5rem;
-    font-family: 'Playfair Display', serif;
-}
-
-.events-section {
-    margin: 0;
-}
-
-.events-section .container-fluid {
-    padding: 0;
-}
-
-.events-section .row {
-    margin: 0;
-}
-
-.events-section h2 {
-    color: #333;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: normal;
-    margin-bottom: 20px;
-    font-family: 'Playfair Display', serif;
-}
-
-.events-section p {
-    max-width: 700px;
-    font-family: 'Playfair Display', serif;
-    text-align: justify;
-    font-size: 1.5rem;
-    color: #555;
-    padding: 0 20px;
-}
-
-.events-section img {
-    width: 100%;
-    height: auto;
-}
-
-/* Footer Styles */
-footer.bg-dark {
-    background-color: #333;
-    color: white;
-}
-
-footer .container {
-    max-width: 1200px;
+.carousel-container {
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
 }
 
-footer .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-footer .col-lg-4 {
-    flex: 1;
-    min-width: 250px;
-    margin: 10px;
-}
-
-footer h5 {
-    margin-bottom: 20px;
-}
-
-footer p {
-    margin-bottom: 10px;
-}
-
-footer .btn {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    color: #fff;
-    text-decoration: none;
-}
-
-footer .btn:hover {
-    background-color: #fff;
-    color: #333;
-}
-
-footer .text-center {
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
     text-align: center;
-    padding: 10px 0;
 }
 
-footer .text-center p {
-    margin: 0;
+.product img {
+    max-width: 100%;
+    height: auto;
 }
 
-footer .bg-image {
-    background-size: cover;
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-controls button {
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    text-align: center;
+    padding: 0;
+}
+
+.quantity {
+    width: 30px;
+    text-align: center;
+}
+
+#cartIcon {
+    display: flex;
+    align-items: center;
+}
+
+#cartIcon i {
+    margin-right: 5px;
+}
+
+#cartModal .modal-content {
+    text-align: left;
+}
+#redes_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
 }

@@ -14,7 +14,7 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
             <div class="container-fluid">
                 <a class="navbar-brand d-md-none" href="#">
-                    <img src="logo.png" alt="Logo" class="logo">
+                    <img src="src/logo.webp" alt="Logo" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -76,37 +76,37 @@
             </div>
 
             <div class="products row">
-                <div class="col-md-3 product" data-name="Vino 1">
+                <div class="col-md-3 product d-flex flex-column align-items-center" data-name="Vino 1">
                     <img src="src/red.webp" alt="Vino 1" class="img-fluid">
                     <button class="btn btn-primary mt-2 add-to-cart">Agregar</button>
-                    <div class="quantity-controls mt-2">
+                    <div class="quantity-controls mt-2 d-flex align-items-center">
                         <button class="btn btn-outline-secondary decrease">-</button>
                         <span class="quantity mx-2">1</span>
                         <button class="btn btn-outline-secondary increase">+</button>
                     </div>
                 </div>
-                <div class="col-md-3 product" data-name="Vino 2">
+                <div class="col-md-3 product d-flex flex-column align-items-center" data-name="Vino 2">
                     <img src="src/Chador_lombardi.webp" alt="Vino 2" class="img-fluid">
                     <button class="btn btn-primary mt-2 add-to-cart">Agregar</button>
-                    <div class="quantity-controls mt-2">
+                    <div class="quantity-controls mt-2 d-flex align-items-center">
                         <button class="btn btn-outline-secondary decrease">-</button>
                         <span class="quantity mx-2">1</span>
                         <button class="btn btn-outline-secondary increase">+</button>
                     </div>
                 </div>
-                <div class="col-md-3 product" data-name="Vino 3">
+                <div class="col-md-3 product d-flex flex-column align-items-center" data-name="Vino 3">
                     <img src="src/rose.png" alt="Vino 3" class="img-fluid">
                     <button class="btn btn-primary mt-2 add-to-cart">Agregar</button>
-                    <div class="quantity-controls mt-2">
+                    <div class="quantity-controls mt-2 d-flex align-items-center">
                         <button class="btn btn-outline-secondary decrease">-</button>
                         <span class="quantity mx-2">1</span>
                         <button class="btn btn-outline-secondary increase">+</button>
                     </div>
                 </div>
-                <div class="col-md-3 product" data-name="Vino 4">
+                <div class="col-md-3 product d-flex flex-column align-items-center" data-name="Vino 4">
                     <img src="src/gran reserva.png" alt="Vino 4" class="img-fluid">
                     <button class="btn btn-primary mt-2 add-to-cart">Agregar</button>
-                    <div class="quantity-controls mt-2">
+                    <div class="quantity-controls mt-2 d-flex align-items-center">
                         <button class="btn btn-outline-secondary decrease">-</button>
                         <span class="quantity mx-2">1</span>
                         <button class="btn btn-outline-secondary increase">+</button>
@@ -132,9 +132,41 @@
             </div>
         </div>
     </div>
-    
-    <!-- Bootstrap y scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+   <!-- Footer -->
+<footer class="bg-dark text-white">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5 class="mb-4">Únete & Ahorra</h5>
+                <p>Disfruta del 15% en tu primera compra y suscríbete al newsletter</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+                </form>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h5 class="mb-4">Contacto</h5>
+                <p>Dirección: Calle Principal, Mendoza</p>
+                <p>Teléfono: +123456789</p>
+                <p>Email: info@bodegaslombardi.com</p>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h5 class="mb-4">Síguenos en las Redes Sociales</h5>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=61559911103362" role="button"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/winelombardi/" role="button"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center py-3" style="background-image: url('src/back_src_footer.webp'); background-size: cover;">
+        <p class="mb-0">© 2024 Bodegas Lombardi. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<!-- Bootstrap y scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
