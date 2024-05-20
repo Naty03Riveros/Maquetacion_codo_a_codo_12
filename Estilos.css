@@ -257,6 +257,27 @@ footer {
   color: #555;
   padding: 0 20px;
 }
+.club-info {
+  max-width: 700px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #555;
+  padding: 0 20px;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.club-info li {
+  margin-bottom: 10px;
+}
+.club-info li {
+  text-align: center;
+}
+.contact-info-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
 
 #contact .container {
   padding-top: 50px;
@@ -276,6 +297,10 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+}
+/* Estilos adicionales para el logo */
+footer img {
+  margin-top: 10px; /* Espacio entre el texto y el logo */
 }
 
 /* Nuevos estilos para la sección de eventos */
