@@ -1,3 +1,16 @@
+body {
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+  font-family: 'Playfair Display', serif; /* Añadir esta línea */
+}
+
+footer {
+  font-family: 'Playfair Display', serif; /* Añadir esta línea */
+}
+
 .navbar-brand img {
   width: 80px;
 }

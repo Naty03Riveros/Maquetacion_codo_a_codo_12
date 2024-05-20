@@ -134,8 +134,8 @@ form.d-flex {
 }
 
 .btn-grey {
-  background-color: #333;
-  color: #fff;
+  background-color: #555 !important;
+  color: #fff !important;
   font-family: 'Playfair Display', serif;
   text-align: center;
   font-size: 1rem;
@@ -146,10 +146,31 @@ form.d-flex {
 }
 
 .btn-grey:hover {
-  background-color: #444;
+  background-color: #444 !important;
 }
 
 .btn-grey:focus {
   outline: none;
   box-shadow: 0 0 5px #444;
+}
+
+.btn-purple {
+  background-color: #7d3c98 !important; /* Lila vino */
+  color: #fff !important;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-purple:hover {
+  background-color: #6d2a88 !important; /* Lila vino más oscuro */
+}
+
+.btn-purple:focus {
+  outline: none;
+  box-shadow: 0 0 5px #6d2a88;
 }
