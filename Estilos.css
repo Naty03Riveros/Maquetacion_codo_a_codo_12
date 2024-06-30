@@ -1,6 +1,20 @@
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+header {
+    text-align: center;
+    z-index: 100;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
 body {
   margin-bottom: 20px;
   font-family: 'Playfair Display', serif;
+
 }
 
 .navbar {
@@ -175,12 +189,12 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  animation: fadeIn 6s ease-in-out;
+  animation: fadeIn 7s ease-in-out;
 }
 
 .inspiration-text {
   color: #333;
-  animation: fadeIn 6s ease-in-out;
+  animation: fadeIn 7s ease-in-out;
 }
 
 .inspiration-section h2 {
@@ -326,3 +340,38 @@ footer img {
   text-align: center; /* Asegura que el texto esté centrado */
   margin-bottom: 40px; /* Ajusta el margen inferior */
 }
+.product-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product-card {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .product-title {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .product-description {
+    margin: 10px 0;
+  }
+  
+  .product-price {
+    font-weight: bold;
+    margin: 0;
+  }
