@@ -1,26 +1,30 @@
 from flask import Flask, render_template
+from config import Config
+from models import db, Vino
 
-app = Flask(__name__)
+def create_app():
+    app = Flask(__name__)
+    app.config.from_object(Config)
+    db.init_app(app)
 
+    with app.app_context():
+        db.create_all()
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+    @app.route('/')
+    def index():
+        return render_template('Index.html')
 
-# Ruta para la página de tienda
-@app.route('/Tienda.html')
-def tienda():
-    return render_template('Tienda.html')
+    @app.route('/tienda')
+    def tienda():
+        vinos = Vino.query.all()
+        return render_template('Tienda.html', vinos=vinos)
 
+    @app.route('/eventos')
+    def eventos():
+        return render_template('Eventos.html')
 
-@app.route('/Eventos.html')
-def eventos():
-    return render_template('Eventos.html')
-
-
-@app.route('/static/<path:path>')
-def send_static(path):
-    return send_from_directory('static', path)
+    return app
 
 if __name__ == '__main__':
+    app = create_app()
     app.run(debug=True)
