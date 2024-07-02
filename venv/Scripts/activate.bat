@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\natri\OneDrive\Escritorio\Maquetacion_equipo_12\venv
+set VIRTUAL_ENV=C:\Users\natri\OneDrive\Escritorio\Clona_Maquetación_12\Maquetacion_codo_a_codo_12\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
